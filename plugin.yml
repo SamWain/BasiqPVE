@@ -1,0 +1,9 @@
+name: BasiqPVE
+main: com.basiqnation.basiqpve.BasiqPVE
+version: 0.1
+author: BasiqDevs
+depend: 
+description: Prevents player damage for PVE players
+permissions:
+  basiqpve.pve:
+    description: Access to PVE rights
