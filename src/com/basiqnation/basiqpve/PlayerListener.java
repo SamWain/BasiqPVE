@@ -26,6 +26,13 @@ public class PlayerListener implements Listener {
 			if (damager.hasPermission("basiqpve.pve")
 					|| damagee.hasPermission("basiqpve.pve")) {
 				event.setCancelled(true);
+				
+			}
+			if(damager.hasPermission("basiqpve.pve")){
+				damager.sendMessage("You cannot damage other players");
+			}
+			if(damagee.hasPermission("basiqpve.pve")){
+				damager.sendMessage("You cannot damage PVE players");
 			}
 		}
 
